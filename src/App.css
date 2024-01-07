@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+
+
+
+
+.dash-box{
+  
+  width: 20%;
+  height: 200px;
+  border-radius: 20px;
+  text-align: center;
+  
+}
+
+.homedemo{
+  margin-left: 20%;
+  transform: translateY(10%),
+}
+.homecard{
+  /* border: 2px solid red; */
+  background-color: #ffffff; /* Replace with your desired background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  border-radius: 20px;
+  padding: 1%;
+}
+
+
+
+
+.topbar{
+  width:84%;
+  top:0%;
+  left:16%;
+}
+
+
+
+
+
+.sidebar-link{
+  text-decoration: none;
+  color: #a2a2a2;
+}
+.sidebar-link.active{
+  color:white;  
+}
+
+
+
+.sidenavbar h2{
+  margin-top: 10%;
+}
+
+
+.sidenavbar{
+  
+  top:0;
+  width: 16%;
+  height: 100%;
+  background-color: #2F4050;
+  color: white;
+  position: fixed;
+  z-index: 2;
+}
+
+.sidebarlist {
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebarrow li{
+  text-decoration: none;
+
+}
+
+.sidebarrow{
+  padding-left: 4%;
+  width: 100%;
+  height: 80px;
+  color: #a2a2a2;
+  display: flex;
+  font-size: 1.2rem;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sidebarrow:hover {
+  cursor: pointer;
+  background-color: #293846;
+}
+
+.sidebarlist{
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .sidenavbar {
+    top: 0;
+    left:0;
+    z-index: 2;
+    width: 80px; /* Set a maximum width */
+    position: static; /* Change the position to static */
+    font-size: 0.6rem;
+  }
+  .sidenavbar h2{
+    opacity: 0;
+  }
+  .homedemo{
+    transform: translateY(10%),
+  }
+  .sidebar-link{
+    left: 0;
+    width: 400px;
+  }
+  .sidebarrow {
+    font-size: 0.6rem;
+  }
+  .topbar{
+    width: 100%;
+    left:0;
+    top:0;
+    height:16%;
+
+  }
+}
