@@ -6,7 +6,6 @@ import { Bar } from 'react-chartjs-2';
 const LineChart = ({limit}) => {
   const chartContainer2 = useRef(null);
   Chart.defaults.font.size = 16;
-
   let myChart2 = null;
 
   const options = {
@@ -34,7 +33,7 @@ const LineChart = ({limit}) => {
     datasets: [
       {
         label: 'Prices',
-        data: [], // Fetched price data will be stored here
+        data: ['549', '899', '1429', '667', '1024', '900', '400', '1211'], // Fetched price data will be stored here
         backgroundColor: 'green',
         
       },
@@ -73,11 +72,13 @@ const LineChart = ({limit}) => {
           myChart2 = new Chart(chartContainer2.current, {
             type: 'line',
             data: {
-              labels: xlabel, // Use product titles as x-axis labels for the prices chart
+              labels: xlabel,
+              // ['a', 'b', 'c', 'd', 'e', 'f', 'g','h'], // Use product titles as x-axis labels for the prices chart
               datasets: [
                 {
                   label: 'Prices',
                   data: prices,
+                  // ['549', '899', '1429', '667', '1024', '900', '400', '1211'],
                 },
               ],
             },

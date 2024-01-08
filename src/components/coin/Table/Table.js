@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import CoinListTable from './CoinListTable';
 import TrendingTable from './TrendingTable';
 
