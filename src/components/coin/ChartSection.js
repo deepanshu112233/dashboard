@@ -236,7 +236,7 @@ export class ChartSection extends Component {
                             series={this.state.Market_Cap.series}
                             type="line"
                             height='300'
-                            width='80%' />
+                            width='98%' />
                     </div>
                     
                     <div className="col-md-12 bg-light">
@@ -245,7 +245,7 @@ export class ChartSection extends Component {
                             series={this.state.Tot_Vol.series}
                             type="line"
                             height='300'
-                            width='80%' />
+                            width='98%' />
 
                     </div>
 
@@ -293,7 +293,7 @@ export class ChartSection extends Component {
                             series={this.state.Price.series}
                             type="area"
                             height='500'
-                            width='90%' />
+                            width='98%' />
                     </div>
                 </div>
                 </div>

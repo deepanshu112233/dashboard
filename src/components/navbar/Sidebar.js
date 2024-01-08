@@ -12,7 +12,7 @@ const Sidebar = () => {
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
-    <div className=''>
+    <div className='' style={{zIndex:'100'}}>
       
       
       

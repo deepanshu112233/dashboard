@@ -4,7 +4,7 @@ export class Header extends Component {
     render() {
         return (
                 <nav className="navbar navbar-expand-lg" style={{backgroundColor:"white",marginLeft:'7%',marginTop:'1%',borderRadius:'8px'}}>
-                    <div className="container-fluid">
+                    <div className="container-fluid bg-white p-1">
 
                         <a className="navbar-brand d-flex ml-auto display-2 fs-2 fw-bold text-uppercase "
                             style={{ fontWeight:"lighter",color:'#664ce9'}} href="/">Crypto 

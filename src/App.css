@@ -220,6 +220,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 .navbar {
+  
   background-color: #2F4050;
   height: 80px;
   display: flex;

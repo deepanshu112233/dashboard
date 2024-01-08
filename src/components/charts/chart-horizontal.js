@@ -12,7 +12,7 @@ const HorizontalChart = ({limit}) => {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        position: 'right',
+        position: 'top',
         
       },
       title: {
