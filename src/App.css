@@ -11,6 +11,65 @@ body{
   background-color: #f3f3f3;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+    
+body::-webkit-scrollbar-thumb {
+  background-color: grey;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  /* creates padding around scroll thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color:  rgb(100, 100, 100);
+}
+
+
+/* Apply scrollbar styles to the container of the table */
+.scrollable-container {
+  max-height: 300px; /* Set a maximum height to enable scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Scrollbar styles */
+.scrollable-container::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: grey; /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+  /* additional styles for the scroll thumb */
+}
+
+/* Target the table inside the scrollable container */
+
+
+  
+
+    .scrollable-container::-webkit-scrollbar-thumb:hover {
+      background-color:  rgb(100, 100, 100);
+    }
+
+    .scrollable-container::-webkit-scrollbar-track {
+      background-color: #5555;
+    }
+
+    /* .scrollable-container::-webkit-scrollbar-track:hover {
+      
+    } */
+
+    
+
+
+
+
+
+
+
+
+
 
 
 
@@ -34,6 +93,20 @@ body{
   padding: 1%;
 }
 
+
+.dashboardcard{
+  /* border: 2px solid red; */
+  background-color: #ffffff; /* Replace with your desired background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  border-radius: 20px;
+  padding: 1%;
+  color: #293846;
+  transition: background-color 0.3s ease,color 0.3s ease;
+}
+
+.dashboardcard:hover{
+  background: #664ce9;
+  color: white;
+}
 
 
 
@@ -125,33 +198,119 @@ body{
 
 
 
-@media (max-width: 768px) {
-  .sidenavbar {
-    top: 0;
-    left:0;
-    z-index: 2;
-    width: 80px; /* Set a maximum width */
-    position: static; /* Change the position to static */
-    font-size: 0.6rem;
-  }
-  .sidenavbar h2{
-    opacity: 0;
-  }
-  .homedemo{
-    transform: translateY(10%),
-  }
-  .sidebar-link{
-    left: 0;
-    width: 400px;
-  }
-  .sidebarrow {
-    font-size: 0.6rem;
-  }
-  .topbar{
-    width: 100%;
-    left:0;
-    top:0;
-    height:16%;
 
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  background-color: #2F4050;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu-bars {
+  margin-left: 1rem;
+  font-size: 2rem;
+  background: none;
+  color: white;
+}
+
+.nav-menu {
+  background-color: #2F4050;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 450ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+.nav-text:hover{
+  background-color: #293846
+  
+}
+
+.nav-text a {
+  margin-bottom: 2%;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* padding: 0 8px; */
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  /* background-color: #000000; */
+  color: #fff;
+}
+.nav-text link {
+  text-decoration: none;
+  color: #151414;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* padding: 0 16px; */
+  border-radius: 4px;
+}
+
+.nav-text link:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: #2F4050;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+span {
+  margin-left: 4%;
 }

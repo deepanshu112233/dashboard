@@ -57,12 +57,12 @@ class App extends Component {
     clearInterval(this.timer);
   }
 
-  incCounter = () => {
-    console.log("called");
-    this.setState(prevState => ({
-      counter: prevState.counter + 1
-    }));
-  }
+  // incCounter = () => {
+  //   console.log("called");
+  //   this.setState(prevState => ({
+  //     counter: prevState.counter + 1
+  //   }));
+  // }
 
   render() {
     return (

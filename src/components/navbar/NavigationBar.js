@@ -4,7 +4,7 @@ import Sidebar from './Sidebar'
 const NavigationBar = () => {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Sidebar/>
     </div>
   )

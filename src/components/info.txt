@@ -4,3 +4,27 @@ npm i @mui/icons-material
 npm i react-router-dom
 npm i chart.js
 npm i recharts
+npm install --save react-apexcharts
+
+ "market_data": {
+    "current_price": {
+      "aed": 162288,
+      "ars": 35890371,
+      "aud": 65901,
+      "bch": 184.873,
+      "bdt": 4829714,
+    }
+ }
+
+ Let say i want to access market_data and withing market data there is current_price and having USD
+ so i have to use . operator here
+ so to bring these things here i have to use ternary condition here
+ high24={high_24h ? high_24h["usd"] : ""}
+ when it is rendering empty string is there
+ but think about we are having avalibilty of market data when fetching is performed from API by comdidmount
+ so we are sending that avalibale value else send empty string
+
+
+here onchange function will demand a prop and that thing is handled by handle submit
+
+... means isse pahle ki jo bhi property thi wo as it is rahegi

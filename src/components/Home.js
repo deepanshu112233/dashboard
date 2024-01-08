@@ -3,20 +3,20 @@ import LineChart from './charts/LineChart';
 import PieChart from './charts/PieChart';
 import HorizontalChart from './charts/chart-horizontal';
 import CountUp from "react-countup"
-import { useState } from 'react';
 
+const temp={color:'#664ce9',fontWeight:'bolder'}
 const Home = () => {
-    const [counter, setCounter] = useState(0);
 
   return (
-    <div className='homedemo container my-4' style={{ transform: 'translateY(10%)', marginLeft: '20%' }}>
+    <div className='homedemo container my-4' style={{ transform: 'translateY(10%)',  }}>
       {/* First Row */}
+      <h1 style={{marginTop:'-8%', textAlign:'center' ,color:'#664ce9',fontWeight:'bolder'}}>WELCOME</h1>
       <div className='my-4 row my-4'>
         <div className='col-md-6 col-lg-4 '>
           <div className="card mb-3 homecard">
             {/* Content for the first column */}
             <div className="card-body">
-              <h2 className="card-title"><CountUp start={0} end={500} duration={1} delay={0}/>+</h2>
+              <h2 className="card-title" style={temp}><CountUp start={0} end={500} duration={1} delay={0}/>+</h2>
               <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
               <span class="badge bg-success">Primary</span>
             </div>
@@ -26,7 +26,7 @@ const Home = () => {
           <div className="card mb-3 homecard">
             {/* Content for the second column */}
             <div className="card-body">
-              <h2 className="card-title"><CountUp start={0} end={200} duration={1} delay={0}/>+</h2>
+              <h2 className="card-title" style={temp}><CountUp start={0} end={200} duration={1} delay={0}/>+</h2>
               <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
               <span class="badge bg-primary">Primary</span>
             </div>
@@ -36,7 +36,7 @@ const Home = () => {
           <div className="card mb-3 homecard">
             {/* Content for the third column */}
             <div className="card-body">
-              <h2 className="card-title"><CountUp start={0} end={100} duration={1} delay={0}/>+</h2>
+              <h2 className="card-title" style={temp}><CountUp start={0} end={100} duration={1} delay={0}/>+</h2>
               <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
               <span class="badge bg-danger">Primary</span>
             </div>
